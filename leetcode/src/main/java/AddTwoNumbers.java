@@ -1,12 +1,10 @@
+/**
+ * You are given two non-empty linked lists representing two non-negative integers.
+ * The digits are stored in reverse order and each of their nodes contain a single digit.
+ * Add the two numbers and return it as a linked list.
+ * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ */
 public class AddTwoNumbers {
-    /**
-     * Definition for singly-linked list.
-     * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode(int x) { val = x; }
-     * }
-     */
 
      public class ListNode {
          int val;
@@ -53,11 +51,11 @@ public class AddTwoNumbers {
 
     public void test(){
         Solution solution = new AddTwoNumbers.Solution();
-//        solution.addTwoNumbers();
+        solution.addTwoNumbers(null, null);
     }
 
     public static void main(String[] args) {
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
-        addTwoNumbers.test();;
+        addTwoNumbers.test();
     }
 }
