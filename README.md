@@ -1,6 +1,4 @@
-# algorithm-learning
-learning algorithm and data structure
-
+## algorithm-learning
 
 ### leetcode algorithm-problems
 
