@@ -11,11 +11,6 @@
  *    You may not alter the values in the list's nodes, only nodes itself may be changed.
  */
 public class ReverseNodesInKGroup {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
 
     class Solution {
         public ListNode reverseKGroup(ListNode head, int k) {
@@ -53,19 +48,8 @@ public class ReverseNodesInKGroup {
 
     public ListNode test(){
         ReverseNodesInKGroup.Solution solution = new ReverseNodesInKGroup.Solution();
-        int vals[] = new int[]{1, 2, 3, 4, 5,6};
-        ListNode head, p;
-        p = head = new ListNode(0);
-        for (int val : vals) {
-            ListNode q = new ListNode(val);
-            q.next = p.next;
-            p.next = q;
-            p = q;
-        }
-//        printListNode(head.next);
-
-//        return null;
-        return solution.reverseKGroup(head.next, 4);
+        ListNode head = ListUtils.createList(new int[]{1, 2, 3, 4, 5,6});
+        return solution.reverseKGroup(head, 4);
     }
 
     public static void main(String[] args) {

@@ -6,6 +6,7 @@
  * Created by huangchaoguang on 2018/12/4.
  */
 public class MedianOfTwoSortedArrays {
+
     class Solution {
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             int size1 = nums1.length;

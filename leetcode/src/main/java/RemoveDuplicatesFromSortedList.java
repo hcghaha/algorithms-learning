@@ -3,11 +3,6 @@
  * Created by huangchaoguang on 2018/12/4.
  */
 public class RemoveDuplicatesFromSortedList {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
 
     class Solution {
         public ListNode deleteDuplicates(ListNode head) {
@@ -30,32 +25,14 @@ public class RemoveDuplicatesFromSortedList {
 
     public ListNode test(){
         Solution solution = new Solution();
-        int vals[] = new int[]{1, 1, 2, 2, 2, 3, 3,6};
-        ListNode head, p;
-        p = head = new ListNode(-1);
-        for (int val : vals) {
-            ListNode q = new ListNode(val);
-            q.next = p.next;
-            p.next = q;
-            p = q;
-        }
-//        printListNode(head.next);
-
-//        return null;
-        return solution.deleteDuplicates(head.next);
+        ListNode head = ListUtils.createList(new int[]{1, 1, 2, 2, 2, 3, 3,6});
+        return solution.deleteDuplicates(head);
     }
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedList main = new RemoveDuplicatesFromSortedList();
         ListNode listNode = main.test();
-        printListNode(listNode);
+        ListUtils.printList(listNode);
 
-    }
-
-    private static void printListNode(ListNode listNode) {
-        while (listNode!=null){
-            System.out.println(listNode.val);
-            listNode = listNode.next;
-        }
     }
 
 }
