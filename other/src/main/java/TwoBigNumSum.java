@@ -134,4 +134,10 @@ public class TwoBigNumSum {
         // 返回结果
         return stringBuilder.toString();
     }
+
+    public static void main(String[] args) {
+        TwoBigNumSum twoBigNumSum = new TwoBigNumSum();
+        String val = twoBigNumSum.sumTwoBigNum("-12999", "999");
+        System.out.println(val);
+    }
 }
