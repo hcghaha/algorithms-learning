@@ -56,8 +56,4 @@ public class ZigZagConversion {
         System.out.println(convertStr);
     }
 
-    public static void main(String[] args) {
-        ZigZagConversion conversion = new ZigZagConversion();
-        conversion.test();
-    }
 }
